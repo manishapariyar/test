@@ -71,7 +71,7 @@ const Navbar = () => {
               Register
             </button>
           </div>
-          <button className="hidden md:flex items-center text-[#013376] text-sm whitespace-nowrap cursor-pointer hover:bg-blue-700">
+          <button className="hidden md:flex items-center text-[#013376] text-sm whitespace-nowrap cursor-pointer hover:text-blue-700">
 
             Register as Employer
             <IoIosArrowForward className="inline-block  " />
