@@ -1,14 +1,16 @@
 
 import './App.css'
-import HomePage from './components/Home/HomePage'
+import Footer from './components/Footer'
+import HomePage from './pages/Home/HomePage'
 
 function App() {
 
 
   return (
     <>
-      <div className="flex ">
+      <div className="flex flex-col min-h-screen justify-between ">
         <HomePage />
+        <Footer />
       </div>
 
     </>

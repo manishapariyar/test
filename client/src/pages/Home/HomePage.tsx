@@ -1,8 +1,9 @@
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../components/Navbar"
 import Home from "../../assets/homepic.png";
 import { IoIosArrowForward } from "react-icons/io";
 import images from "../../assets/images";
 import { motion } from "framer-motion";
+
 
 const HomePage = () => {
   return (
@@ -34,7 +35,7 @@ const HomePage = () => {
 
 
       {/* LOGO SCROLLER */}
-      <div className="absolute left-0 right-0 md:bottom-8 md:top-135 lg:bottom-20 xl:bottom-10 sm:bottom-0  z-10 bg-[#083269]  overflow-hidden  ">
+      <div className="absolute left-0 right-0  md:bottom-8 lg:bottom-20 xl:bottom-10 sm:bottom-0  z-10 bg-[#083269]  overflow-hidden  ">
         <motion.div
           className="flex items-center gap-16 justify-center"
           animate={{ x: ["0%", "-50%"] }}
@@ -88,6 +89,7 @@ const HomePage = () => {
 
 
       </div>
+
 
     </div>
   );
