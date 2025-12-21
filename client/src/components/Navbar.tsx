@@ -1,16 +1,17 @@
-import { useState } from "react";
+
 import logo from "../assets/logo.png";
 import { MdOutlineMenu } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiSolidDownArrow } from "react-icons/bi";
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
+const Navbar = (
+  { open, setOpen }: { open: boolean; setOpen: React.Dispatch<React.SetStateAction<boolean>> }
+) => {
+
 
   return (
     <nav className="w-full bg-white shadow-md px-4 md:px-6">
-
 
 
       <div className="max-w-6xl mx-auto h-22 flex items-center justify-between">
@@ -19,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
 
           <button
-            className="md:hidden text-2xl"
+            className="md:hidden text-2xl pt-6"
             onClick={() => setOpen(!open)}
           >
 

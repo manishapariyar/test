@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../../components/Navbar"
 import Home from "../../assets/homepic.png";
 import { IoIosArrowForward } from "react-icons/io";
@@ -6,12 +7,15 @@ import { motion } from "framer-motion";
 
 
 const HomePage = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="w-full  top-2 relative h-80vh md:h-[90vh] lg:h-[85vh] ">
+    <div className="w-full  top-2 relative h-80vh md:h-[90vh] lg:h-[98vh] ">
 
       {/* HERO SECTION */}
-      <Navbar />
-      <div className=" bg-gradient-to-r from-[#3c5f91] via-blue-950 to-[#3c5f91] pt-10 w-full  flex items-center justify-center  ">
+      <Navbar open={open} setOpen={setOpen} />
+      <div className=" bg-gradient-to-r from-[#3c5f91] via-blue-950 to-[#3c5f91] pt-10 w-full  flex items-center justify-center  "
+        onClick={() => setOpen(false)}
+      >
         <div className=" text-white text-3xl font-semibold  flex  md:flex-row  flex-col gap-8 items-center justify-around">
           <div className="col-span-1 flex flex-col text-4xl ml-8 ">
             <p>Welcome to <span className="text-amber-400">TalentTrail</span></p>
@@ -71,7 +75,7 @@ const HomePage = () => {
           {/* LEFT BOX */}
 
           <div className="w-[30%] h-full flex flex-col items-center justify-center bg-[#083269]">
-            <div className="h-9 md:h-15 border-l-4 ml-4 md:ml-45 text-blue-800 ">
+            <div className="h-10 md:h-15 border-l-4 ml-6 md:ml-45 text-blue-800 ">
               <div className="flex flex-col items-start w-full justify-center word-wrap ml-4 ">
                 <p className="md:text-4xl font-bold text-amber-50">10k+</p>
                 <p className="text-xs md:text-xl text-white font-semibold   ">Openings daily</p>
