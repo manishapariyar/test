@@ -9,6 +9,15 @@ import H from "../assets/companies/h.png";
 import I from "../assets/companies/i.png";
 import J from "../assets/companies/j.png";
 
+import B1 from "../assets/1.png"
+import B2 from "../assets/2.webp"
+import B3 from "../assets/3.webp"
+import B4 from "../assets/4.webp"
+import B5 from "../assets/5.webp"
+import B6 from "../assets/6.webp"
+import B7 from "../assets/7.webp"
+
+
 const images = [
   { id: 1, src: A },
   { id: 2, src: B },
@@ -22,4 +31,18 @@ const images = [
   { id: 10, src: J },
 ];
 
-export default images;
+const Banners = [
+  { id: 1, src: B1 },
+  { id: 2, src: B2 },
+  { id: 3, src: B3 },
+  { id: 4, src: B4 },
+  { id: 5, src: B5 },
+  { id: 6, src: B6 },
+  { id: 7, src: B7 },
+
+]
+
+export {
+  images
+  , Banners
+};
